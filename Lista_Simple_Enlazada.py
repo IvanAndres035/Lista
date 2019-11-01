@@ -52,9 +52,12 @@ class linked_list:
         lista =[]
         node = self.head
         while node != None:
-
+            lista.append(node.data)
             print(node.data)
             node = node.next
+        lista.sort()
+        print(lista)
+
 
 #Instancia de la clase
 lista = linked_list()
