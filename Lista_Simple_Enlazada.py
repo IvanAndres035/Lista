@@ -49,15 +49,22 @@ class linked_list:
 
     # Método para imprimir la lista de nodos
     def print_list(self):
+    #Se agrega una lista vacia
         lista =[]
+    #Nodo es igual a la cabeza
         node = self.head
+    #Mientras el nodo sea igual a None
         while node != None:
+            #A la lista se le insertan el nodo y el dato
             lista.append(node.data)
+            #se imprimen el nodo y el dato
             print(node.data)
+            #nodo va a ser igual al nodo siguiente
             node = node.next
+        #Se ordena la lista con los datos en forma creciente.
         lista.sort()
+        #Se imprime la lista con los datos.
         print(lista)
-
 
 #Instancia de la clase
 lista = linked_list()
